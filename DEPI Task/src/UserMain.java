@@ -1,16 +1,11 @@
 import java.util.Scanner;
 
 public class UserMain {
-    private Menu menu = new Menu();
+    private Menu menu = Menu.getInstance();
     private Addition addition = new Addition();
     private Scanner scanner = new Scanner(System.in);
 
     public UserMain() {
-        // Initialize menu with some default items
-        menu.addSandwich(new SandwichItem("Beef Burger", 80.0));
-        menu.addSandwich(new SandwichItem("Chicken Burger", 70.0));
-        menu.addSandwich(new SandwichItem("Cheese Burger", 75.0));
-
         // Initialize additions with some default items
         addition.addAddition(new AdditionItem("Ketchup", 5.0));
         addition.addAddition(new AdditionItem("Mayonnaise", 10.0));
